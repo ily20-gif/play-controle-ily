@@ -112,7 +112,7 @@ h6 {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--text-color);
     position: absolute;
     top: 0;
     right: -700px;
@@ -137,7 +137,7 @@ h6 {
     border: none;
     border-radius: 6px;
     background-color: #6D3A6D;
-    color: white;
+    color: var(--text-color);
     font-size: 14px;
     margin-bottom: 20px;
     outline: none;
