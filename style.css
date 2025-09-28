@@ -159,3 +159,17 @@ h6 {
     background: #ddd;
 }
 
+
+@media  screen and (max-width:768px) {
+    .poste-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .side-form{
+        width: 100%;
+    }
+    .stats-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
