@@ -7,7 +7,7 @@ window.onload = function() {
     btn.addEventListener('click', () => {
         firstLoad.classList.remove('show')
         container.classList.add('showContainer')
-    })
+})
 
     let postes = document.querySelectorAll('.poste')
     let sideForm = document.querySelector('.side-form')
@@ -25,7 +25,6 @@ window.onload = function() {
         inUse.textContent = availablePost
     }
     availablePostes()
-
     postes.forEach(poste => {
         poste.addEventListener('click', () => {
             if (poste.classList.contains('available')) {
@@ -39,7 +38,7 @@ window.onload = function() {
     })
 
     playBtn.addEventListener('click',()=>{
-        if (!isAvailaible) return;
+        if (!isAvailaible) return
         let time = timeSelect.value
         isAvailaible.classList.remove('available')
         isAvailaible.classList.add('not-available')
@@ -68,7 +67,7 @@ window.onload = function() {
             let img = isAvailaible.querySelector('img')
             img.src = 'green.png'
             availablePostes()
-        }, duration);
+        }, duration)
         isAvailaible = false
     })
 }
